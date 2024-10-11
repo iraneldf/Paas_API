@@ -23,6 +23,9 @@ ALLOWED_HOSTS = []
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Asegúrate de incluir esta línea
+]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
@@ -30,7 +33,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #     os.path.join(BASE_DIR, 'static'),
 # ]
 
+
 INSTALLED_APPS = [
+    'rest_framework',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -38,10 +43,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_cleanup',
+    'corsheaders',
     'pass_app'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -49,6 +57,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+# Cors setting
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "http://localhost:3000",
 ]
 
 ROOT_URLCONF = 'Pass.urls'
@@ -213,7 +227,8 @@ JAZZMIN_SETTINGS = {
     # "hide_models": [],
     #
     # # List of apps (and/or models) to base side menu ordering off of (does not need to contain all apps/models)
-    "order_with_respect_to": ["pass_app", "auth"],
+    "order_with_respect_to": ["pass_app", "pass_app.ProyectoEnProceso", "pass_app.ProyectoTerminados",
+                              "pass_app.Miembro", "pass_app.Contactenos", "auth"],
     #
     # # Custom links to append to app groups, keyed on app name
     "custom_links": {
@@ -233,6 +248,8 @@ JAZZMIN_SETTINGS = {
         "auth.Group": "fas fa-users",
         "pass_app.ProyectoEnProceso": "fas fa-chart-bar",
         "pass_app.ProyectoTerminados": "fas fa-table",
+        "pass_app.Miembro": "fas fa-user",  # Ícono para el modelo Miembro (User)
+        "pass_app.Contactenos": "fas fa-address-card",  # Ícono para el modelo Contactenos
     },
     # # Icons that are used when one is not manually specified
     "default_icon_parents": "fas fa-chevron-circle-right",

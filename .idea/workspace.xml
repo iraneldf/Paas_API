@@ -4,21 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a7ff858-948d-4383-bf58-77b7fc47f787" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Pass.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pass/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pass/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pass/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pass/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pass/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pass_app/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="5a7ff858-948d-4383-bf58-77b7fc47f787" name="Changes" comment="Primer Commit">
+      <change afterPath="$PROJECT_DIR$/pass_app/api.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass_app/migrations/0002_redes_miembro.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass_app/migrations/0003_remove_miembro_redes_miembro_facebook_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass_app/migrations/0004_contactenos_alter_miembro_facebook_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass_app/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pass_app/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pass/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pass/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pass/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pass/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/imagenes/proyectos/Captura_de_pantalla_2024-09-30_163836.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pass_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pass_app/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_app/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pass_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pass_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pass_app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +37,22 @@
       <map>
         <entry key="ADMIN" value="true" />
         <entry key="MODEL" value="true" />
-        <entry key="VIEW" value="false" />
+        <entry key="VIEW" value="true" />
       </map>
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -57,15 +71,17 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/irane/PycharmProjects/Pass",
+    "last_opened_file_path": "C:/Users/irane/PycharmProjects/Pass/static",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -74,6 +90,16 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\irane\PycharmProjects\Pass\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\irane\PycharmProjects\Pass\Pass" />
+      <recent name="C:\Users\irane\PycharmProjects\Pass\static\img" />
+      <recent name="C:\Users\irane\PycharmProjects\Pass\pass_app" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Run Pass" type="Python.DjangoServer" factoryName="Django server">
       <module name="Pass" />
@@ -123,8 +149,39 @@
       <workItem from="1727894456494" duration="14000" />
       <workItem from="1727894477862" duration="3631000" />
       <workItem from="1727915504433" duration="2836000" />
-      <workItem from="1727918874393" duration="401000" />
+      <workItem from="1727918874393" duration="3638000" />
+      <workItem from="1728413611598" duration="50000" />
+      <workItem from="1728417609093" duration="998000" />
+      <workItem from="1728418636412" duration="613000" />
+      <workItem from="1728429335304" duration="1368000" />
+      <workItem from="1728431180946" duration="2221000" />
+      <workItem from="1728435622348" duration="10000" />
+      <workItem from="1728499006697" duration="337000" />
+      <workItem from="1728499400550" duration="35000" />
+      <workItem from="1728499449002" duration="42000" />
+      <workItem from="1728499518941" duration="38000" />
+      <workItem from="1728499589037" duration="2355000" />
+      <workItem from="1728510860695" duration="12015000" />
+      <workItem from="1728584936921" duration="14049000" />
+      <workItem from="1728670485409" duration="5137000" />
     </task>
+    <task id="LOCAL-00001" summary="Primer Commit">
+      <option name="closed" value="true" />
+      <created>1727928483144</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727928483144</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Primer Commit">
+      <option name="closed" value="true" />
+      <created>1727928748221</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727928748221</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,5 +197,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primer Commit" />
   </component>
 </project>
